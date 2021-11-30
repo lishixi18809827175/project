@@ -24,7 +24,7 @@ public class JDBCUtil {
 
 
     public static void close(Connection connection, PreparedStatement statement, ResultSet resultSet) {
-        // 先打开的后关闭
+        // 关闭资源
         if (resultSet != null) {
             try {
                 resultSet.close();
